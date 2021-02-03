@@ -1,0 +1,19 @@
+      real*8          xu(0:i1),xp(0:i1),dr(0:i1),dy,dz,z(kmax)
+      integer         cstart(2)
+      common /phsgrd/ xu,xp,dr,dy,dz,z,cstart
+      save   /phsgrd/
+
+!     ****************
+      real*8          kPlanck(1:nTemp), Tnb(1:nTemp)
+      real*8          tempTab(1:nTab),rhoTab(1:nTab)
+      real*8          muTab(1:nTab),lamTab(1:nTab)
+      real*8          cpTab(1:nTab),enthTab(1:nTab),lamocpTab(1:nTab)
+      real*8          temp2Tab(1:nTab),rho2Tab(1:nTab)
+      real*8          mu2Tab(1:nTab),lam2Tab(1:nTab)
+      real*8          cp2Tab(1:nTab),enth2Tab(1:nTab),lamocp2Tab(1:nTab)
+ 
+      common /rad/  kPlanck, Tnb
+      save   /rad/
+
+      common /tab/  tempTab,rhoTab,muTab,lamTab,cpTab,enthTab,lamocpTab,temp2Tab,rho2Tab,mu2Tab,lam2Tab,cp2Tab,enth2Tab,lamocp2Tab
+      save   /tab/
